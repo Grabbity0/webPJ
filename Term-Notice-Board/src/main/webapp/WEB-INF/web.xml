@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Term-Notice-Board</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+    <param-name>oracle_jdbc_driver</param-name>
+    <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  </context-param>
+  <context-param>
+    <param-name>db_url</param-name>
+    <param-value>jdbc:oracle:thin:@127.0.0.1:1521/xe</param-value>
+  </context-param>
+  <context-param>
+    <param-name>db_userid</param-name>
+    <param-value>system</param-value>
+  </context-param>
+  <context-param>
+    <param-name>db_password</param-name>
+    <param-value>Manager1</param-value>
+  </context-param>  
+  
+  <context-param>
+  	<param-name>dao_user_class</param-name>
+  	<param-value>com.wp.board.UsersinfoDbcpDAO</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>dao_board_class</param-name>
+  	<param-value>com.wp.board.BoardinfoDbcpDAO</param-value>
+  </context-param>
+  
+</web-app>
